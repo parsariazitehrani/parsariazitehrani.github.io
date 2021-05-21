@@ -24,14 +24,14 @@
             </span>
           {% else %}
             <span id="home-button" class="nav-button">
-                <a class="home-button" href="{{ SITEURL }}/" title="Home"><i class="ic ic-arrow-left"></i> Home</a>
+                <a class="home-button" href="{{ SITEURL }}/" title="خانه"><i class="ic ic-arrow-left"></i> خانه</a>
             </span>
           {% endif %}
           <span id="menu-button" class="nav-button">
-            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+            <a class="menu-button"><i class="ic ic-menu"></i> صفحات</a>
           </span>
         </nav>
-        <h1 class="post-title">{{ SITENAME }} - Tags</h1>
+        <h1 class="post-title">{{ SITENAME }} - برچسب ها</h1>
         {% if selected_cover %}
           <div class="blog-cover cover" style="background-image: url('{{ selected_cover }}')">
         {% elif selected_color %}
@@ -49,7 +49,7 @@
       {% for tag, articles in tags|sort %}
         {% set count = articles|count %}
         <div class="tag tag-weight-{{ (count/(max_count/steps))|int + 1 }}">
-          <a href="{{ SITEURL }}/{{ tag.url }}" title="{{ count }} article(s) tagged '{{ tag }}'">{{ tag }}</a>
+          <a href="{{ SITEURL }}/{{ tag.url }}" title="تعداد {{ count }} مطلب با برچسب '{{ tag }}' پیدا شد">{{ tag }}</a>
         </div>
       {% endfor %}
     </div>

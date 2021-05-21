@@ -905,8 +905,12 @@ img {
     text-decoration: none
 }
 
+.home-template {
+    direction: rtl;
+}
+
 .home-template .blog-name {
-    font-size: 3em
+    font-size: 3em;
 }
 
 .has-cover .blog-name {
@@ -1112,13 +1116,16 @@ img {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
+    /*
     overflow-y: scroll;
     box-sizing: border-box
+    */
 }
 
 #menu .nav-label {
     display: block;
-    padding: 1.666em 2em;
+    padding: 1.666em 5em;
     margin: 0;
     opacity: 0.5;
     font-size: 0.75em;

@@ -1,7 +1,7 @@
 <nav id="menu">
-  <a class="close-button">Close</a>
+  <a class="close-button">بستن</a>
   <div class="nav-wrapper">
-    <p class="nav-label">Menu</p>
+    <p class="nav-label">لیست صفحات سایت</p>
     <ul>
       {% for title, link in MENUITEMS %}
           <li><a href="{{ link }}" role="presentation">{{ title }}</a></li>
@@ -20,7 +20,7 @@
       {% endif %}
 
       {% for name,link in SOCIAL if name in ['rss', 'rss-square', 'feed'] %}
-        <li class="nav-rss"><a href="{{ link }}"><i class="ic ic-rss"></i> Subscribe</a></li>
+        <li class="nav-rss"><a href="{{ link }}"><i class="ic ic-rss"></i> اشتراک</a></li>
       {% endfor %}
     </ul>
   </div>
